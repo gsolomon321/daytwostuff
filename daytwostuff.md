@@ -24,7 +24,9 @@ title: Day Two Stuff
 2. type the command for creating a virtual environment
 3. make sure the environment is activated
 4. Should you include the environment in your repo or not?  
+    - Q4 Answer: No, you should not include the enviornment in your repository. Most enviornments are machine-specific and tend to make the repos unnecessarily large. Instead, it is better practice to add a requirments.txt file. 
 5. Now what is your terminal display "path"? Is it different? 
+    - Q5 Answer: The "path" is the same, "/workspaces/daytwostuff". However, the terminal prompt is slightly different, including the "(venv)" before the path -- "(venv) /workspaces/daytwostuff $".
 
 ### Load/(create if needed) the requirements.txt file
 1. use the correct terminal commands to load the requirements file into your virtual environment
@@ -37,17 +39,22 @@ title: Day Two Stuff
 ### Extension Management
 1. You've possibilly added a new extension, hopefully it was Data Wrangler, if not search and add it
 2. Find the extension in the extension menu. What do you notice about the extension menu? 
+    - Q2 Answer: The Data Wrangler extension menu contains extension details, features, and changelog. In the details section, it demos the data exploration and preparation processes. In this section is also provides guidance setting up your enviornment, explains the interface, and discusses next steps. 
 3. Review the capabilities, what are three useful elements of Data Wrangler
+    1. CSV files and DataFrames can be previewed in a clean table format without writing any code.
+    2. You can filter rows, rename columns, handle missing values, and change data types using the UI.
+    3. Every action you take generates Python code, which is useful for reusability, reproducibility, and learning in general.
 
 ### Package managing
 1. Install plotly in the terminal
-2. Note the version
+2. Note the version **(version: 6.5.1)**
 3. Add plotly to your requirements file using terminal commands
 4. Then update the requirements document
 5. Why do we use a requirements.txt file?
+    - The `requirements.txt` file ensures consistent environments across different machines, making projects easier to set up and execute for others. It also specifies package versions, which helps limit compatibility issues. Using the `pip install -r requirements.txt` command allows dependencies to be installed quickly and conveniently.
 
 ### Pip Freeze/(create if needed) the requirements.txt file
-1. use the correct terminal commands to update your requirements.txt file
+1. use the correct terminal commands to update your requirements.txt file: terminal command = `pip freeze > requirements.txt`
 
 ### Github 
 1. You've made several changes to your environment, including adding a python file, dataset and updates to the requirements file
